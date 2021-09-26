@@ -50,7 +50,7 @@ group :test do
 end
 
 group :production do
-  #  Use PostgreSQl as the database for Active Record 
+  # Use PostgreSQl as the database for Active Record 
   gem 'pg' 
 end
 

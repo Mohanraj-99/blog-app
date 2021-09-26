@@ -1,1 +1,1 @@
-# This is a BlogApp developed by Ruby On Rails
+# This is a BlogApp developed using Ruby On Rails

@@ -12,5 +12,7 @@
     <br>
     <%= link_to 'edit' , edit_article_path(article) %>  
     <br>
+    <%= link_to 'destroy' , article_path(article) , method: :delete , data: {confirm: "Are you sure you want to delete?"} %>  
+    <br>
 </p>
 <% end %>

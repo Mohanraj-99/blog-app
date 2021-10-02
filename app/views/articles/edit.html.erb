@@ -1,4 +1,4 @@
-<h2> New </h2>
+<h2> Edit Existing article </h2>
 
 <% if @article.errors.any? %>
 <h2> The following error prevented the method to create article </h2> 
@@ -20,5 +20,5 @@
 <p>
 <%= f.submit %>
 </p>
-<%= link_to 'Show all' , articles_path %>
+<%= link_to 'Back to article listing' , articles_path %>
 <% end %>

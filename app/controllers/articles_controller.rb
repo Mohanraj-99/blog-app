@@ -14,18 +14,22 @@ class ArticlesController < ApplicationController
         end
     end
         
-    # def edit
-    #     @article = Article.find(:id)
-    #     @article
-    # end
+    def edit
+        @article = Article.find(params[:id]) 
+    end
 
-    # def update
-    #     article = Article.new()
-    #     article.save()
-    # end
+    def update
+        @article = Article.find(params[:id])
+        if @article.update(get_allowed_params)
+            flash[:notice] = "The Article updated successfully"
+            redirect_to article_path(@article)
+        else
+            render :edit
+        end
+    end
     
     def index
-        Article.all
+        @articles = Article.all
     end
     
     def show
